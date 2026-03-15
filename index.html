@@ -133,7 +133,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   position:relative;
   display:flex;align-items:center;justify-content:center;
   /* orbit size = memoji + orbit gap */
-  width:clamp(220px,34vw,380px);
+  width:clamp(180px,26vw,300px);
   aspect-ratio:1;
 }
  
@@ -150,7 +150,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 /* each logo sits on the ring */
 .orbit-logo{
   position:absolute;
-  width:clamp(30px,4vw,44px);height:clamp(30px,4vw,44px);
+  width:clamp(26px,3.2vw,36px);height:clamp(26px,3.2vw,36px);
   border-radius:50%;
   background:#0a1a0e;
   border:1.5px solid rgba(0,255,106,.25);
@@ -159,7 +159,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
   /* counter-rotate so logo stays upright as orbit spins */
   animation:logoCounter 18s linear infinite;
   transition:transform .2s;
-  font-size:clamp(14px,2vw,20px);
+  font-size:clamp(12px,1.6vw,16px);
   /* place each logo on the circle edge via CSS custom properties */
 }
 @keyframes logoCounter{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
@@ -174,8 +174,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 }
  
 @media(max-width:680px){
-  .memoji-wrap{width:clamp(200px,55vw,280px)}
-  .memoji-wrap .memoji-ring{width:clamp(110px,30vw,160px)}
+  .memoji-wrap{width:clamp(160px,45vw,220px)!important}
+  .memoji-wrap .memoji-ring{width:clamp(90px,24vw,130px)!important}
 }
  
 /* ── RIGHT — TEXT ─────────────────────────────────── */
